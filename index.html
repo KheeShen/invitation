@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Autoplay Video with Sound</title>
+  <title>Invitation</title>
   <style>
     body {
       margin: 0;
@@ -21,15 +21,10 @@
   </style>
 </head>
 <body>
-  <video id="videoElement" loop>
+  <video id="videoElement" loop autoplay muted>
     <source src="invitation.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <script>
-    const video = document.getElementById('videoElement');
-    video.play().catch((error) => {
-      console.error('Autoplay failed:', error);
-    });
-  </script>
+
 </body>
 </html>
